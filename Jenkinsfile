@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+    agent { label 'any' }
     parameters {
         choice(name: 'ENV', choices: ['dev', 'test', 'prod',"release"])
     } 
