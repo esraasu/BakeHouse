@@ -1,12 +1,9 @@
 pipeline {
     agent any
-
     stages {
         stage('build') {
             steps {
                 echo 'build'
-                sh "ls"
-                sh "docker ps"
             }
         }
         stage('test') {
